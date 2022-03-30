@@ -1,22 +1,23 @@
 import React from 'react';
 import Calendar from '../components/comp_pages/_Home/Calendar';
+import Hello from '../components/comp_pages/_Home/Hello';
 import ProgrammeJour from '../components/comp_pages/_Home/ProgrammeJour';
 import Progression from '../components/comp_pages/_Home/Progression';
-import ProfilUser from '../components/comp_pages/_Profil/ProfilUser';
 import Container from '../components/Container';
 import Navigation from '../components/Navigation';
 
-const Profil = () => {
+const Home = () => {
     return (
         <div>
-        <Navigation />
+        <Navigation/>
+        <h1>Accueil</h1>
         <Container />
-        <h1>Profil</h1>
-        <ProfilUser/>
-        <Calendar/>
-        <Progression/>
+        <Hello />
+        <Calendar />
+        <Progression />
+        <ProgrammeJour/>
     </div>
     );
 };
 
-export default Profil;
+export default Home;

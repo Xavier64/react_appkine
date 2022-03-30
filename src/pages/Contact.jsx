@@ -1,11 +1,14 @@
 import React from 'react';
+import CompContact from '../components/comp_pages/_Contact/Comp_contact';
+import Container from '../components/Container';
 import Navigation from '../components/Navigation';
 
 const Contact = () => {
     return (
         <div>
-            <Navigation />
-            <h1>Contact</h1>
+        <Navigation />
+        <Container />
+        <CompContact/>
         </div>
     );
 };
